@@ -24,16 +24,16 @@ Bu backend, e-ticaret platformunun tüm sunucu tarafı işlevselliklerini sağla
 
 1. **Projeyi Klonlayın**
 
-\```bash
+```bash
 git clone https://github.com/umutkarakas34/ecommerce-project.git
 cd ecommerce-project/backend
-\```
+```
 
 2. **Gerekli Bağımlılıkları Yükleyin**
 
-\```bash
+```bash
 npm install
-\```
+```
 
 3. **Veritabanını Kurun**
 
@@ -41,7 +41,7 @@ MySQL üzerinde bir veritabanı oluşturun ve `config/config.json` dosyasını v
 
 `utility/db.js` dosyasını aşağıdaki gibi yapılandırın:
 
-\```javascript
+```javascript
 const Sequelize = require('sequelize');
 
 const sequelize = new Sequelize('shopping', 'root', 'yourpassword', {
@@ -50,15 +50,15 @@ const sequelize = new Sequelize('shopping', 'root', 'yourpassword', {
 });
 
 module.exports = sequelize;
-\```
+```
 
 4. **Veritabanı migrasyonlarını çalıştırmak için sequelize.sync() yorum satırındaki kodu yorum satırından çıkarın.**
 
 5. **Sunucuyu Başlatın**
 
-\```bash
+```bash
 npm start
-\```
+```
 
 Sunucu varsayılan olarak `http://localhost:5000` adresinde çalışacaktır.
 
