@@ -64,7 +64,7 @@ Sunucu varsayılan olarak `http://localhost:5000` adresinde çalışacaktır.
 
 ## Kod Yapısı
 
-\```javascript
+```javascript
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -97,7 +97,7 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 app.listen(port, () => {
     console.log(`Sunucu ${port} portunda çalışıyor...`);
 });
-\```
+```
 
 ## API Dokümantasyonu
 
@@ -224,4 +224,4 @@ Bandırma Onyedi Eylül Üniversitesi E-ticaret Bitirme Projesi'nin bir parças�
 
 ---
 
-Bu proje, [mmutlucod/eCommerce](https://github.com/mmutlucod/eCommerce) projesine benzer şekilde geliştirilmiştir ve frontend ile backend birleştirilmiş haldedir.
+Bu projenin tamamı [mmutlucod/eCommerce](https://github.com/mmutlucod/eCommerce) linkinde frontend ile backend birleştirilmiş haldedir.
